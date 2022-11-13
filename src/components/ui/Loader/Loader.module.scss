@@ -1,0 +1,70 @@
+$loader-color: red;
+
+.wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: wrapper normal 3s;
+	background-color: rgb(143 143 143 / 26%);
+
+	@keyframes wrapper {
+		0% {
+			background-color: white;
+		}
+		100% {
+			background-color: rgb(143 143 143 / 26%);
+		}
+	}
+
+	.loader {
+		@-webkit-keyframes flippers {
+			0% {
+				transform: perspective(40px) rotateY(-180deg);
+			}
+			50% {
+				transform: perspective(40px) rotateY(0deg);
+			}
+		}
+		@keyframes flippers {
+			0% {
+				transform: perspective(40px) rotateY(-180deg);
+			}
+			50% {
+				transform: perspective(40px) rotateY(0deg);
+			}
+		}
+
+		.flippers {
+			height: 20px;
+			display: grid;
+			grid-template-columns: repeat(5, 20px);
+			grid-gap: 5px;
+		}
+		.flippers div {
+			-webkit-animation: flippers calc(1.25 * 1s) calc(var(--delay) * 1s) infinite
+				ease;
+			animation: flippers calc(1.25 * 1s) calc(var(--delay) * 1s) infinite ease;
+			background-color: $loader-color;
+		}
+		.flippers div:nth-of-type(1) {
+			--delay: 0.25;
+		}
+		.flippers div:nth-of-type(2) {
+			--delay: 0.5;
+		}
+		.flippers div:nth-of-type(3) {
+			--delay: 0.75;
+		}
+		.flippers div:nth-of-type(4) {
+			--delay: 1;
+		}
+		.flippers div:nth-of-type(5) {
+			--delay: 1.25;
+		}
+	}
+}

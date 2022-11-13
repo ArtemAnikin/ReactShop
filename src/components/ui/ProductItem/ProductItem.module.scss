@@ -1,0 +1,48 @@
+.item {
+	min-height: 400px;
+	max-width: 379px;
+	margin: 10px;
+	border: 1px solid black;
+	border-radius: 25px;
+	padding-bottom: 10px;
+	position: relative;
+
+	.image {
+		height: 250px;
+		> div {
+			border-radius: 25px 25px 0 0;
+			border-bottom: 1px solid black;
+			height: inherit;
+			width: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+	}
+	.title {
+		text-align: center;
+		font-size: 25px;
+		font-family: sans-serif;
+		margin-bottom: 5px;
+	}
+	.info {
+		display: flex;
+		flex-direction: row;
+		height: 100px;
+		width: 100%;
+
+		.desc {
+			width: 70%;
+			padding: 5px 10px;
+			overflow: hidden;
+		}
+
+		.price {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 30%;
+			font-size: 25px;
+		}
+	}
+}

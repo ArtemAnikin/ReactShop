@@ -1,0 +1,41 @@
+.wrapper {
+	position: relative;
+	.remove {
+		position: relative;
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 50px;
+		> Button {
+			margin: 10px;
+			width: 100px;
+		}
+	}
+	.infoWrapper {
+		position: relative;
+		display: flex;
+		align-items: center;
+		height: 110px;
+		justify-content: flex-end;
+
+		.info {
+			position: relative;
+			width: 250px;
+			display: flex;
+			height: 100%;
+			padding: 10px 0;
+			justify-content: center;
+
+			.orderInfo {
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-evenly;
+				width: 100%;
+
+				.price {
+					font-size: 23px;
+				}
+			}
+		}
+	}
+}

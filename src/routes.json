@@ -1,0 +1,22 @@
+[
+  {
+    "path": "/",
+    "component": "Home"
+  },
+  {
+    "path": "/catalog",
+    "component": "Catalog"
+  },
+  {
+    "path": "/cart",
+    "component": "Cart"
+  },
+  {
+    "path": "/profile",
+    "component": "Profile"
+  },
+  {
+    "path": "/product/:id",
+    "component": "Product"
+  }
+]

@@ -1,0 +1,22 @@
+[
+	{
+		"path": "/",
+		"component": "Home",
+		"side": "leftSide"
+	},
+	{
+		"path": "/catalog",
+		"component": "Catalog",
+		"side": "leftSide"
+	},
+	{
+		"path": "/cart",
+		"component": "Cart",
+		"side": "rightSide"
+	},
+	{
+		"path": "/profile",
+		"component": "Profile",
+		"side": "rightSide"
+	}
+]
